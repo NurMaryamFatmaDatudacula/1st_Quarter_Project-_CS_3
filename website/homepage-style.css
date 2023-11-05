@@ -1,0 +1,504 @@
+<style>
+    body {
+        background-color: #ffffff;
+    }
+    a {
+        display: inline-block;
+        background-color: #ffffff;
+        border-radius: 10px;
+        color: black;
+        padding-top: 5px;
+        padding-bottom: 7px;
+        padding-right: 5px;
+        padding-left: 5px;
+        width: absolute;
+        margin-bottom: 3px;
+        margin-right: 5px;
+        text-align: center;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #ffffff;
+        width: absolute;
+        font-weight: bold;
+        font-size: 24.5px;
+        font-family: Comic Sans MS;
+        text-align: center;
+    }
+    li {
+        float: right;
+        text-align: center;
+    }
+    li a {
+        color: black;
+        text-align: center;
+        text-decoration: none;
+    }
+    li a:hover {
+        background-color: #999494;
+    }
+    img {
+        float:left;
+    }
+    img.p {
+        float:left;
+        border-bottom: 3px solid black;
+    }
+    img.l {
+        float:left;
+        border: 3px solid black;
+    }
+    a.l {
+        float: left;
+    }
+    a.l:hover {
+        background-color: #999494;
+    }
+    * {
+        box-sizing: border-box;
+    }
+    div.column{
+        float: left;
+        width: 32.8%;
+        padding: 20px;
+    }
+    div.row{
+        content:"";
+        clear: both;
+        display: table;
+    }
+    span.t{
+        font-size: 25px;
+        font-weight: bold;
+        font-family: Comic Sans MS;
+    }
+    p.s{
+        border: 3px solid black;
+        border-radius: 25px;
+        background-color: #d3d3d3;
+        margin-left: 240px;
+        margin-bottom: 12px;
+        padding-right: 15px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        padding-left: 15px;
+        width: 320px;
+        font-family: Comic Sans MS;
+    }
+    a.ss{
+        border: 3px solid black;
+        border-radius: 25px;
+        background-color: #d3d3d3;
+        margin-left: 240px;
+        margin-bottom: 10px;
+        padding-right: 15px;
+        padding-bottom: 10px;
+        padding-top: 5px;
+        padding-left: 15px;
+        width: 320px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Comic Sans MS;
+        text-decoration: none;
+    }
+    a.ss:hover{
+        background-color: #999494;
+        border: 3px solid black;
+    }
+    div.d {
+        border: 3px solid black;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        padding-right: 30px;
+        padding-bottom: 10px;
+        padding-top: 5px;
+        padding-left: 10px;
+        width: 590px;
+        height: 380px;
+        background-color: #ebebeb;
+    }
+    p.b{
+        border: 3px solid black;
+        border-radius: 25px;
+        background-color: #d3d3d3;
+        margin-left: 260px;
+        margin-bottom: 75px;
+        padding-right: 15px;
+        padding-bottom: 10px;
+        padding-top: 5px;
+        padding-left: 15px;
+        width: 320px;
+        font-family: Comic Sans MS;
+    }
+    a.bb{
+        border: 3px solid black;
+        border-radius: 25px;
+        background-color: #d3d3d3;
+        margin-left: 260px;
+        margin-bottom: 10px;
+        padding-right: 15px;
+        padding-bottom: 10px;
+        padding-top: 5px;
+        padding-left: 15px;
+        width: 320px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Comic Sans MS;
+        text-decoration: none;
+    }
+    a.bb:hover{
+        background-color: #999494;
+        border: 3px solid black;
+    }
+    div.d1 {
+        border: 3px solid black;
+        margin-left: 0px;
+        margin-right: 10px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        padding-right: 30px;
+        padding-bottom: 10px;
+        padding-top: 5px;
+        padding-left: 10px;
+        width: 610px;
+        height: 380px;
+        background-color: #ebebeb;
+    }
+    p.m{
+        border: 3px solid black;
+        border-radius: 25px;
+        background-color: #d3d3d3;
+        margin-left: 260px;
+        margin-bottom: 53px;
+        padding-right: 15px;
+        padding-bottom: 10px;
+        padding-top: 5px;
+        padding-left: 15px;
+        width: 320px;
+        font-family: Comic Sans MS;
+    }
+    a.mm{
+        border: 3px solid black;
+        border-radius: 25px;
+        background-color: #d3d3d3;
+        margin-left: 260px;
+        margin-bottom: 10px;
+        padding-right: 15px;
+        padding-bottom: 10px;
+        padding-top: 5px;
+        padding-left: 15px;
+        width: 320px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Comic Sans MS;
+        text-decoration: none;
+    }
+    a.mm:hover{
+        background-color: #999494;
+        border: 3px solid black;
+    }
+    div.d2 {
+        border: 3px solid black;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        padding-right: 30px;
+        padding-bottom: 10px;
+        padding-top: 5px;
+        padding-left: 10px;
+        width: 610px;
+        height: 380px;
+        background-color: #ebebeb;
+    }
+    p.p{
+        border: 3px solid black;
+        border-radius: 25px;
+        background-color: #d3d3d3;
+        margin-left: 240px;
+        margin-bottom: 45px;
+        padding-right: 15px;
+        padding-bottom: 10px;
+        padding-top: 5px;
+        padding-left: 15px;
+        width: 320px;
+        font-family: Comic Sans MS;
+    }
+    a.pp{
+        border: 3px solid black;
+        border-radius: 25px;
+        background-color: #d3d3d3;
+        margin-left: 240px;
+        margin-bottom: 10px;
+        padding-right: 15px;
+        padding-bottom: 10px;
+        padding-top: 5px;
+        padding-left: 15px;
+        width: 320px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Comic Sans MS;
+        text-decoration: none;
+    }
+    a.pp:hover{
+        background-color: #999494;
+        border: 3px solid black;
+    }
+    div.d3 {
+        border: 3px solid black;
+        margin-left: 10px;
+        margin-right: 0px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        padding-right: 30px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-left: 10px;
+        width: 590px;
+        height: 380px;
+        background-color: #ebebeb;
+    }
+    p.r{
+        border: 3px solid black;
+        border-radius: 25px;
+        background-color: #d3d3d3;
+        margin-left: 260px;
+        margin-bottom: 65px;
+        padding-right: 15px;
+        padding-bottom: 10px;
+        padding-top: 5px;
+        padding-left: 15px;
+        width: 320px;
+        font-family: Comic Sans MS;
+    }
+    p.rr{
+        border: 3px solid black;
+        border-radius: 25px;
+        background-color: #d3d3d3;
+        margin-left: 260px;
+        margin-bottom: 10px;
+        padding-right: 15px;
+        padding-bottom: 10px;
+        padding-top: 5px;
+        padding-left: 15px;
+        width: 320px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Comic Sans MS;
+    }
+    p.rr:hover{
+        background-color: #999494;
+        border: 3px solid black;
+    }
+    div.d4 {
+        border: 3px solid black;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        padding-right: 30px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-left: 10px;
+        width: 610px;
+        height: 380px;
+        background-color: #ebebeb;
+    }
+    p.sph{
+        border: 3px solid black;
+        border-radius: 25px;
+        background-color: #d3d3d3;
+        margin-left: 240px;
+        margin-bottom: 15px;
+        padding-right: 15px;
+        padding-bottom: 10px;
+        padding-top: 5px;
+        padding-left: 15px;
+        width: 340px;
+        font-family: Comic Sans MS;
+    }
+    p.sp{
+        border: 3px solid black;
+        border-radius: 25px;
+        background-color: #d3d3d3;
+        margin-left: 240px;
+        margin-bottom: 10px;
+        padding-right: 15px;
+        padding-bottom: 10px;
+        padding-top: 5px;
+        padding-left: 15px;
+        width: 340px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Comic Sans MS;
+    }
+    p.sp:hover{
+        background-color: #999494;
+        border: 3px solid black;
+    }
+    div.d5 {
+        border: 3px solid black;
+        margin-left: 10px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        padding-right: 30px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-left: 10px;
+        width: 610px;
+        height: 380px;
+        background-color: #ebebeb;
+    }
+    p.am{
+        border: 3px solid black;
+        border-radius: 25px;
+        background-color: #d3d3d3;
+        margin-left: 240px;
+        margin-bottom: 20px;
+        padding-right: 15px;
+        padding-bottom: 10px;
+        padding-top: 5px;
+        padding-left: 15px;
+        width: 320px;
+        font-family: Comic Sans MS;
+    }
+    p.ams{
+        border: 3px solid black;
+        border-radius: 25px;
+        background-color: #d3d3d3;
+        margin-left: 240px;
+        margin-bottom: 10px;
+        padding-right: 15px;
+        padding-bottom: 10px;
+        padding-top: 5px;
+        padding-left: 15px;
+        width: 320px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Comic Sans MS;
+    }
+    p.ams:hover{
+        background-color: #999494;
+        border: 3px solid black;
+    }
+    div.d6 {
+        border: 3px solid black;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        padding-right: 30px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-left: 10px;
+        width: 590px;
+        height: 400px;
+        background-color: #ebebeb;
+    }
+    p.ab{
+        border: 3px solid black;
+        border-radius: 25px;
+        background-color: #d3d3d3;
+        margin-left: 240px;
+        margin-bottom: 65px;
+        padding-right: 15px;
+        padding-bottom: 10px;
+        padding-top: 5px;
+        padding-left: 15px;
+        width: 340px;
+        font-family: Comic Sans MS;
+    }
+    p.abb{
+        border: 3px solid black;
+        border-radius: 25px;
+        background-color: #d3d3d3;
+        margin-left: 240px;
+        margin-bottom: 10px;
+        padding-right: 15px;
+        padding-bottom: 10px;
+        padding-top: 5px;
+        padding-left: 15px;
+        width: 340px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Comic Sans MS;
+    }
+    p.abb:hover{
+        background-color: #999494;
+        border: 3px solid black;
+    }
+    div.d7 {
+        border: 3px solid black;
+        margin-left: 0px;
+        margin-right: 10px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        padding-right: 30px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-left: 10px;
+        width: 610px;
+        height: 400px;
+        background-color: #ebebeb;
+    }
+    p.ex{
+        border: 3px solid black;
+        border-radius: 25px;
+        background-color: #d3d3d3;
+        margin-left: 240px;
+        margin-bottom: 65px;
+        padding-right: 15px;
+        padding-bottom: 10px;
+        padding-top: 5px;
+        padding-left: 15px;
+        width: 340px;
+        font-family: Comic Sans MS;
+    }
+    p.exx{
+        border: 3px solid black;
+        border-radius: 25px;
+        background-color: #d3d3d3;
+        margin-left: 240px;
+        margin-bottom: 10px;
+        padding-right: 15px;
+        padding-bottom: 10px;
+        padding-top: 5px;
+        padding-left: 15px;
+        width: 340px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Comic Sans MS;
+    }
+    p.exx:hover{
+        background-color: #999494;
+        border: 3px solid black;
+    }
+    div.d8 {
+        border: 3px solid black;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        padding-right: 30px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-left: 10px;
+        width: 610px;
+        height: 400px;
+        background-color: #ebebeb;
+    }
+</style>
